@@ -1,0 +1,102 @@
+.empty-datatable-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.datatable-header {
+  margin-bottom: 20px;
+}
+
+.datatable-header h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.datatable-header p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.datatable-wrapper {
+  overflow-x: auto;
+}
+
+.wizard-datatable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styling untuk DataTables */
+.wizard-datatable th {
+  background-color: #f9fafb;
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.wizard-datatable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.wizard-datatable tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* Styling untuk search, pagination, dll */
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-left: 8px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin: 0 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 0 3px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #6366f1 !important;
+  color: white !important;
+  border: 1px solid #6366f1 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #e5e7eb !important;
+  color: #4b5563 !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+  .datatable-wrapper {
+    overflow-x: auto;
+  }
+  
+  .empty-datatable-container {
+    padding: 15px;
+  }
+  
+  .dataTables_wrapper .dataTables_filter,
+  .dataTables_wrapper .dataTables_length {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}

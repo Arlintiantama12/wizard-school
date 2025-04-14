@@ -1,0 +1,93 @@
+/* Spellbook Container - Simplified */
+.spellbook-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header Styles */
+.spellbook-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.spellbook-header h1 {
+  font-size: 1.8rem;
+  color: #4b2e83;
+  margin: 0 0 8px 0;
+}
+
+.spellbook-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+/* Empty State Styles */
+.spellbook-content-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  max-width: 450px;
+}
+
+.empty-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%236366f1" viewBox="0 0 24 24"><path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/></svg>');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.empty-state h2 {
+  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.empty-state p {
+  color: #666;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .spellbook-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .spellbook-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .empty-state {
+    padding: 15px;
+    max-width: 90%;
+  }
+  
+  .empty-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-size: 20px;
+  }
+}

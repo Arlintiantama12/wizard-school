@@ -1,0 +1,99 @@
+/* Styling tambahan untuk tabel guru */
+
+/* Styling untuk daftar tugas */
+.tugas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tugas-item {
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.tugas-clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.tugas-clickable:hover {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #1f2937;
+}
+
+.tugas-clickable:active {
+  transform: scale(0.98);
+}
+
+/* Tombol Tambah Guru */
+.tambah-guru-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #3b82f6; /* Warna biru berbeda dari tombol tambah murid */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.tambah-guru-btn:hover {
+  background-color: #2563eb;
+}
+
+.tambah-guru-btn:active {
+  transform: scale(0.98);
+}
+
+.tambah-guru-btn svg {
+  stroke: white;
+  margin-right: 2px;
+}
+
+/* Styling untuk badge sertifikat */
+.sertifikat-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.sertifikat-count {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sertifikat-level {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.sertifikat-senior {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #ca8a04;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.sertifikat-menengah {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #1d4ed8;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.sertifikat-junior {
+  background-color: rgba(99, 102, 241, 0.15);
+  color: #6366f1;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
